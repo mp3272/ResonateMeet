@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@charset "UTF-8";
+
+/* Table of contents 
+*   1. General
+*   2. Container
+*   3. Header
+*   4. User profile
+*   5. Settings
+*   6. Setting
+*/
+
+/* 1. General */
+:root {
+  --color: #efa8a8;
+  --color-icon-next: #c5c5c5;
+
+  --background-color: #f9f9f9;
+  --background-color-header: #ffffff;
+  --background-color-setting: #ffffff;
+
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-font-awesome: "Font Awesome 5 Free";
+
+  --font-size: 16px;
+
+  --primary: #778f79;
+}
+
+body {
+  background-color: #312f2f;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+h2 {
+  color: #aeaeae;
+  font-weight: normal;
+  padding-left: 20px;
+}
+
+/* 2. Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 3. Header */
+.header {
+  background-color: var(--background-color-header);
+  color: var(--primary);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__icon:before {
+  font-family: var(--font-family-font-awesome);
+  font-style: normal;
+  font-weight: 900;
+  content: "\f0c9";
+}
+
+/* 4. User profile */
+.user-profile {
+  background-color: var(--background-color-header);
+  border-radius: 50%;
+  height: 15vw;
+  margin-top: -8vw;
+  z-index: -1;
+}
+
+.user-profile__image {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10vw;
+  margin-right: 2vw;
+}
+
+.user-profile__image > img {
+  border-radius: 50%;
+  height: 10vw;
+  width: 10vw;
+}
+
+/* 5. Settings */
+.settings {
+  padding: calc(5vw + 10px) 0 0 0;
+}
+
+/* 6. Setting */
+.setting {
+  text-align: left;
+}
+
+.setting__row {
+  background-color: #312f2f;
+  color:#fff;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.setting__row > p:before {
+  color: #ffffff;
+  font-family: var(--font-family-font-awesome);
+  font-weight: 900;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  height: 2vw;
+  width: 2vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.setting__row > p.edit-profile:before {
+  content: "\f007";
+  background-color: #52bfff;
+}
+
+.setting__row > p.your-location:before {
+  content: "\f3c5";
+  background-color: #ff5757;
+}
+
+.setting__row > p.notifications:before {
+  content: "\f0f3";
+  background-color: #f6da4c;
+}
+
+.setting__row > p.privacy-policy:before {
+  content: "\f3ed";
+  background-color: #995de8;
+}
+
+.setting__row > p.tnc:before {
+  content: "\f249";
+  background-color: #97ff7f;
+}
+
+.setting__row > p.help:before {
+  content: "\f086";
+  background-color: #ee4e99;
+}
+
+.setting__row > i {
+  position: absolute;
+  right: 29px;
+}
+
+.setting__row > i:before {
+  content: "\f054";
+  color: var(--color-icon-next);
+  font-family: var(--font-family-font-awesome);
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 900;
+}
