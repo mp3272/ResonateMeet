@@ -1,9 +1,8 @@
 function Header() {
   return (
     <div className="header">
-      <i className="header__icon" />
-      <h1>Settings</h1>
-      <p><b>X</b></p>
+      
+     
     </div>
   );
 }
@@ -33,11 +32,11 @@ function SettingAccount() {
       </div>
       <div className="setting__row">
         <p className="your-location">Location Access</p>
-        <i />
+       
       </div>
       <div className="setting__row">
         <p className="edit-profile">Spotify Account</p>
-        <i />
+       
       </div>
     </div>
   );
@@ -46,17 +45,19 @@ function SettingAccount() {
 function SettingOther() {
   return (
     <div className="setting">
-      <h2>Other</h2>
+      
       <div className="setting__row">
-        <p className="privacy-policy">Privacy policy</p>
+        <p className="privacy-policy">Import Playlist</p>
         <i />
       </div>
       <div className="setting__row">
-        <p className="tnc">Terms and conditions</p>
+        <p className="tnc">Help and feedback</p>
         <i />
       </div>
+      
       <div className="setting__row">
-        <p className="help">Help and feedback</p>
+         
+        <p className="help">Log Out</p>
         <i />
       </div>
     </div>
